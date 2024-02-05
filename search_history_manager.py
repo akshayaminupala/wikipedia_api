@@ -1,6 +1,9 @@
 # search_history_manager.py
+import nltk
+nltk.download('stopwords')
 from collections import Counter
 from dbmodel import db,SearchHistory
+from nltk.corpus import stopwords
 
 class SearchHistoryManager:
     @staticmethod
@@ -9,7 +12,12 @@ class SearchHistoryManager:
         words = article_text.split()
 
         # Use Counter to count the frequency of each word
-        word_frequency = Counter(words).most_common(n)
+
+        # Remove stopwords
+        stop_words = set(stopwords.words('english'))
+        filtered_words = [word.lower() for word in words if word.isalpha() and word.lower() not in stop_words]
+
+        word_frequency = Counter(filtered_words).most_common(n)
 
         return word_frequency
 
