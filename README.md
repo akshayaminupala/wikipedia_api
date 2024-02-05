@@ -50,8 +50,10 @@ Before setting up the application, ensure you have the following installed on yo
 ```
  python app.py
 ```
-
-        
+### Running unit tests
+```
+ python unit_test.py
+```
 
 ### 1. Word Frequency Analysis
 
