@@ -41,7 +41,7 @@ Before setting up the application, ensure you have the following installed on yo
 
 3. **Install Dependencies**
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirement.txt
     ```
 
 
@@ -50,8 +50,10 @@ Before setting up the application, ensure you have the following installed on yo
 ```
  python app.py
 ```
-
-        
+### Running unit tests
+```
+ python unit_test.py
+```
 
 ### 1. Word Frequency Analysis
 
@@ -66,6 +68,9 @@ Before setting up the application, ensure you have the following installed on yo
 ```bash
 http://localhost:5000/word_frequency?topic=Python&n=5
 ```
+## Output 
+![image](https://github.com/akshayaminupala/wikipedia_api/assets/68412892/ee9db75f-d8c6-4a49-ada2-4922907973a3)
+
 ### 2. Search History
 
 The Search History endpoint allows you to retrieve a list of past search entries along with the top words associated with each search.
@@ -79,6 +84,10 @@ The Search History endpoint allows you to retrieve a list of past search entries
 ```bash
 http://localhost:5000/search_history
 ```
+## Output 
+![image](https://github.com/akshayaminupala/wikipedia_api/assets/68412892/be3dd103-ba9f-4c73-8df6-8b6532b1992a)
+
+
 ### Examples
 
 shown in the demo video
