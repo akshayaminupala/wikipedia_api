@@ -41,7 +41,7 @@ Before setting up the application, ensure you have the following installed on yo
 
 3. **Install Dependencies**
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirement.txt
     ```
 
 
